@@ -1,5 +1,6 @@
 from calc_func import do_addition, do_subtraction, do_division
 from multiply import do_multiply
+from area import cal_area_rect
 def main():
     print("Hello calculator")
     print("""
