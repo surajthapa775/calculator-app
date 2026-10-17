@@ -1,5 +1,6 @@
 from calc_func import do_addition, do_subtraction
 from multiply import do_multiply
+from area import cal_area_rect
 def main():
     print("Hello calculator")
     print("""
@@ -7,6 +8,7 @@ def main():
             1. Add
             2. Subtract
             3. Mul
+            4. Area
             """)
 
     user_input= input("Select the function\n")
@@ -20,6 +22,9 @@ def main():
         result= do_subtraction(a,b)
     elif user_input=="3":
         result= do_multiply(a,b)
+
+    elif user_input=="4":
+        result= cal_area_rect(a,b)
 
     print(result)
 
